@@ -1,0 +1,125 @@
+/*Moving Character*/
+.character{
+	padding-left: 10em
+}
+/*Moving Body Parts*/
+.body-parts{
+	padding-left: 10em;
+}
+/*beginning of body parts*/
+.face{
+	height: 10em;
+	width: 10em;
+	background-color: red;
+	border-radius: 10em;
+	position: absolute;
+}
+.body{
+	margin-top: 8em;
+	height: 20em;
+	width: 10em;
+	background-color: blue;
+	border-radius: 10em;
+	position: absolute;
+}
+.left-eye{
+	height: 3em;
+	width: 3em;
+	background-color: white;
+	position: absolute;
+	border-radius: 10em;
+	margin-top:2em;
+	margin-left: 2em; 
+}
+.right-eye{
+	height: 3em;
+	width: 3em;
+	background-color: white;
+	position: absolute;
+	border-radius: 10em;
+	margin-top:2em;
+	margin-left: 6em; 
+}
+.right-pupil{
+	height: 1.5em;
+	width: 1.5em;
+	background-color: black;
+	position: absolute;
+	border-radius: 10em;
+	margin-top:	1em;
+	margin-left: 1em; 
+	-webkit-animation:bounce .5s infinite;
+}
+.left-pupil{
+	height: 1.5em;
+	width: 1.5em;
+	background-color: black;
+	position: absolute;
+	border-radius: 10em;
+	margin-top:	1em;
+	margin-left: .5em; 
+	-webkit-animation: rite-bounce .5s infinite;
+}
+.right-leg{
+	margin-top: 25em;
+	height: 15em;
+	width: 5em;
+	background-color: gray;
+	border-radius: 10em;
+	position: absolute;
+}
+.left-leg{
+	margin-top: 25em;
+	margin-left: 5.7em;
+	height: 15em;
+	width: 5em;
+	background-color: green;
+	border-radius: 10em;
+	position: absolute;
+}
+.mouth{
+	border-radius: 10em;
+	margin-top: 2.6em;
+	margin-left: 2.6em;
+	height: 5em;
+	width: 5em;
+	border-bottom: 1em solid;
+	position: absolute;
+}
+/*end of body-parts*/
+
+/*Superman pic*/
+.supermanpic{
+	margin-top: 10em;
+	height: 10em;
+	width: 10em;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Superman_shield.svg/1280px-Superman_shield.svg.png);
+}
+.cape{    
+    margin-top: 9.2em;
+    margin-left: -.5em;
+    height: 27em;
+    width: 24em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-image: url(http://vignette2.wikia.nocookie.net/clubpenguin/images/a/a5/Red_Cape_icon.png/revision/latest?cb=20131214170530);
+}
+
+/*animations*/
+@-webkit-keyframes bounce {
+  0%       { bottom:.3125em; }
+  25%, 75% { bottom:.9375em; }
+  50%      { bottom:1.25em; }
+  100%     { bottom:0em;}
+}
+@-webkit-keyframes rite-bounce {
+  0%       { right:.3125em; }
+  25%, 75% { right:.9375em; }
+  50%      { right:1.25em; }
+  100%     { right:0em;}
+}
+/*end of animations*/
